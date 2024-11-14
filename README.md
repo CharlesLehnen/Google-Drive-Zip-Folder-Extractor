@@ -23,29 +23,31 @@ To assist with this, I've created this script, which can extract and rebuild the
 
 There are three ways to run the project:
 
-1. **Running Directly from Jupyter Notebook**
+1. **Running Directly in Command Line**
    - Clone the repository.
-   - Navigate to the directory and open the Jupyter Notebook:
+   - Navigate to the code directory:
      ```sh
-     jupyter notebook extract_google_drive_output.ipynb
+     python extract_google_drive_output.py
      ```
-   - Run the cells in the notebook to execute the extraction process.
-
-   Alternatively, you can run the `.ipynb` file using the command line:
-   ```sh
-   jupyter nbconvert --to notebook --execute extract_google_drive_output.ipynb
-   ```
 
 2. **Running via Executable File (Windows Only)**
    - Navigate to the `dist/` folder.
    - Locate the `.exe` file.
    - Run the `.exe` to start the program without needing to install Python or any dependencies.
 
-3. **Running in VSCode**
-   - Open the repository folder in VSCode.
-   - Ensure you have the Python and Jupyter extensions installed.
-   - Open the `extract_google_drive_output.ipynb` file in VSCode.
-   - Use the built-in Jupyter interface to run the single cell of the notebook.
+3. **Running via Jupyter Notebook**
+
+   - Clone the repository.
+   - Navigate to the directory and open the Jupyter Notebook:
+     ```sh
+     jupyter notebook extract_google_drive_output.ipynb
+     ```
+   - Run the cells in the notebook to execute the extraction process. Alternatively you can just open in VSCode or other IDE and run there.
+
+   Alternatively, you can run the `.ipynb` file using the command line:
+   ```sh
+   jupyter nbconvert --to notebook --execute extract_google_drive_output.ipynb
+   ```
 
 ## Limitations
 
